@@ -1,0 +1,19 @@
+$light-grey: #f2f2f2;
+$medium-grey: #d3d3d3;
+$dark-grey: #505050;
+$red: #ff0000;
+$white: #ffffff;
+
+
+$primary-color: $dark-grey;
+$accent-color: $red;
+$border-line: $light-grey;
+$shadow-color: $medium-grey;
+
+body {
+	color: $primary-color;
+}
+
+a {
+	color: $accent-color;
+}

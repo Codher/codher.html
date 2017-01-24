@@ -1,0 +1,14 @@
+{
+  "name": "codher.html",
+  "version": "1.0.0",
+  "description": "Source code for Codher's Getting Started with Front End Development workshop",
+  "main": "server.js",
+  "repository": "https://github.com/Codher/codher.html.git",
+  "author": "Raul Pineda <raul@raulpineda.mx>",
+  "license": "MIT",
+  "dependencies": {
+    "gulp": "^3.9.1",
+    "gulp-connect": "^5.0.0",
+    "gulp-sass": "^3.1.0"
+  }
+}

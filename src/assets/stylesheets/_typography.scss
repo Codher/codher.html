@@ -1,0 +1,55 @@
+/*Importing google fonts*/
+@import url('https://fonts.googleapis.com/css?family=Roboto:700,400');
+
+/*Setting up basic font*/
+$primary-font: 'Georgia', serif;
+$secondary-font: 'Roboto', sans-serif;
+
+
+
+body {
+	font-family: $primary-font;
+	font-size: 16px;
+	font-size: 1em;
+}
+
+h1, h2, h3, h4 {
+	font-family: $secondary-font;
+	font-weight: 700;
+}
+
+h1 {
+	font-size: 32px;
+	font-size: 2em;
+}
+
+h2 {
+	font-size: 26px;
+	font-size: 1.625em;
+	margin: 35px 0 10px 0;
+}
+
+h3 {
+	font-size: 22px;
+	font-size: 1.375em;
+	margin: 25px 0 10px 0;
+}
+
+h4 {
+	font-size: 18px;
+	font-size: 1.125em;
+	margin: 15px 0 10px 0;
+}
+
+p {
+	line-height: 24px;
+	line-height: 1.5em;
+	margin: 5px 0 5px 0;
+}
+
+ul {
+	li {
+		margin: 10px 0 5px 0;
+		list-style: square inside;
+	}
+}

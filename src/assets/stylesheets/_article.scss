@@ -1,0 +1,52 @@
+img {
+	max-height: 100%;
+	max-width: 100%;
+	width: 100%;
+}
+
+header {
+	background-image: url("../images/article-cover.jpg");
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	box-shadow: 0 5px 5px $shadow-color;
+	padding: 60px 10px 20px 10px;
+	position: relative;
+	height: 150px;
+	width: 100%;
+
+	h1 {
+		color: $white;
+	}
+
+	.article-info {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		position: absolute;
+		bottom: -15px;
+		color: $white;
+		font-family: $secondary-font;
+		font-size: 12px;
+		font-size: 0.75em;
+
+		img {
+			margin: 0px 5px 0px 0px;
+		}
+	}
+
+}
+
+.article-body {
+	padding: 20px 10px 20px 10px;
+}
+
+.autor-avatar {
+	border-radius: 50%;
+	border: 1px solid $border-line ;
+}
+
+.small-avatar {
+	height: 60px;
+	width: 60px;
+}
