@@ -5,6 +5,9 @@
 $primary-font: 'Georgia', serif;
 $secondary-font: 'Roboto', sans-serif;
 
+$article-info-font: $secondary-font;
+$intro-font: $secondary-font;
+$button-font: $secondary-font;
 
 
 body {
@@ -49,7 +52,8 @@ p {
 
 ul {
 	li {
-		margin: 10px 0 5px 0;
-		list-style: square inside;
+		line-height: 20px;
+		line-height: 1.25em;
+		margin: 10px 0 5px 20px;
 	}
 }

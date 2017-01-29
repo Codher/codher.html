@@ -1,19 +1,46 @@
-$light-grey: #f2f2f2;
-$medium-grey: #d3d3d3;
-$dark-grey: #505050;
-$red: #ff0000;
+//color codes
+$beige: #F5EFE8;
+$blue: #8EA5EB;
+$grey-light: #f2f2f2;
+$grey-medium: #d3d3d3;
+$grey-dark: #505050;
+$red: #D53939;
+$pink: #F6378F;
 $white: #ffffff;
+$yellow: #FFDD00;
 
-
-$primary-color: $dark-grey;
+//basic colours
+$primary-color: $grey-dark;
 $accent-color: $red;
-$border-line: $light-grey;
-$shadow-color: $medium-grey;
+$button-hover-color: $white;
+$border-line: $grey-light;
+
+//article header colors
+$header-main-headline: $white;
+$shadow-color: $grey-medium;
+$article-info-color: $white;
+
+//article footer colors
+$author-background: $grey-light;
+$topic-button-background: $grey-medium; //topic general
+$topic-background-web-design: $pink;
+$topic-background-trends: $yellow;
+$topic-background-web: $beige;
+$topic-background-inspiration: $blue;
 
 body {
 	color: $primary-color;
 }
 
 a {
-	color: $accent-color;
+	border-bottom: 4px solid $accent-color;
+	color: $primary-color;
+	text-decoration: none;
+	transition: color 0.5s ease,
+				border 0.5s ease;
+
+	&:hover {
+		color: $accent-color;
+	}
 }
+

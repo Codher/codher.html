@@ -1,52 +1,241 @@
+/*BASIC ARTICLE STYLING*/
+
 img {
+	border: 1px solid $border-line;
+	height: auto;
 	max-height: 100%;
 	max-width: 100%;
 	width: 100%;
 }
 
-header {
+//article header
+.article-header {
 	background-image: url("../images/article-cover.jpg");
 	background-position: center center;
 	background-repeat: no-repeat;
 	background-size: cover;
 	box-shadow: 0 5px 5px $shadow-color;
+	height: 150px;
 	padding: 60px 10px 20px 10px;
 	position: relative;
-	height: 150px;
 	width: 100%;
 
 	h1 {
-		color: $white;
+		color: $header-main-headline;
 	}
-
-	.article-info {
-		display: flex;
-		align-items: center;
-		justify-content: center;
-		position: absolute;
-		bottom: -15px;
-		color: $white;
-		font-family: $secondary-font;
-		font-size: 12px;
-		font-size: 0.75em;
-
-		img {
-			margin: 0px 5px 0px 0px;
-		}
-	}
-
 }
 
+.article-info {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: absolute;
+	bottom: -15px;
+	color: $article-info-color;
+	font-family: $article-info-font;
+	font-size: 12px;
+	font-size: 0.75em;	
+}
+.by-author {
+	padding: 0 5px 0 5px;
+}
+
+
+//article body
 .article-body {
 	padding: 20px 10px 20px 10px;
+
+	img {
+		margin: 15px 0 15px 0;
+	}
 }
 
 .autor-avatar {
 	border-radius: 50%;
-	border: 1px solid $border-line ;
 }
-
 .small-avatar {
 	height: 60px;
 	width: 60px;
+}
+
+.intro {
+	font-family: $intro-font;
+	font-weight: 700;
+	margin: 20px 0 0 0;
+}
+
+//Buttons
+.primary-button {
+	border-radius: 10px;
+	background-color: $accent-color;
+	border: 1px solid $button-hover-color;
+	color: $button-hover-color;
+	display: block;
+	font-family: $button-font;
+	font-size: 14px;
+	font-size: 0.875em;
+	font-weight: bold;
+	margin: 20px auto 20px auto;
+	padding: 15px 15px 15px 15px;
+	text-align: center;
+	transition: background-color 0.5s ease,
+				border 0.5s ease;
+
+	&:after {
+		content: " >";
+	}
+
+	&:hover {
+		background-color: $button-hover-color;
+		border: 1px solid $accent-color;
+		color: $accent-color;
+	}
+}
+
+
+//article footer
+.author-container {
+	background: $author-background;
+	padding: 10px 10px 20px 10px;
+}
+
+.author-block {
+	text-align: center;
+}
+
+.big-avatar {
+	height: 90px;
+	margin: 15px 0 0 0;
+	width: 90px;
+}
+
+.author-info {
+	p {
+		font-size: 12px;
+		font-size: 0.75em;
+
+	}
+}
+
+//topics
+.topic-container {
+	padding: 10px 10px 20px 10px;
+}
+
+.topics-list {
+	list-style: none;
+
+	li {
+		background-color: $topic-button-background;
+		border-radius: 5px;
+		display: inline-block;
+		font-family: $button-font;
+		font-size: 12px;
+		font-size: 0.75em;
+		font-weight: bold;
+		margin: 5px 2px 5px 2px;
+		padding: 5px 10px 5px 10px;
+	}
+
+	.web-design {
+		background-color: $topic-background-web-design;
+	}
+
+	.trends {
+		background-color: $topic-background-trends;
+	}
+
+	.web {
+		background-color: $topic-background-web;
+	}
+
+	.inspiration {
+		background-color: $topic-background-inspiration;
+	}
+}
+
+
+/*MEDIA QUERIES*/
+
+@media (min-width: 480px) {
+	.article-header {
+  		height: 200px;
+    	text-align: center;
+  	}
+
+	.primary-button {
+		max-width: 270px;
+	}
+
+	.article-body {
+		padding: 30px 20px 30px 20px;
+	}
+
+	.article-footer {
+		padding: 0 20px 30px 20px;
+	}
+}
+
+@media (min-width: 768px) {
+  	.article-header {
+  		height: 300px;
+  		padding: 80px 30px 30px 30px;
+  	}
+
+  	.article-info {
+  		flex-direction: column;
+  		margin: 40px 0 0 0;
+  		position: static;
+  	}
+
+  	.by-author {
+  		padding: 10px 0 5px 0;
+  	}
+
+  	.article-body {
+		padding: 30px 30px 30px 30px;
+	}
+
+	.article-footer {
+		padding: 0 30px 30px 30px;
+	}
+
+	.author-container {
+		padding: 20px 30px 40px 30px;
+	}
+
+	.author-block {
+		margin: 30px 0 0 0;
+		text-align: left;
+
+		img { 
+			display: inline-block;
+			margin: 0 15px 0 0;
+			vertical-align: top;
+		}
+	}
+
+	.author-info {
+		display: inline-block;
+		vertical-align: top;
+		width: 80%;
+	}
+
+	.topic-container {
+		h3, ul {
+			display: inline-block;
+			vertical-align: text-bottom;
+		}
+
+		li:first-child {
+			margin-left: 10px;
+		}
+	}
+}
+
+@media (min-width: 800px) {
+	.article-body, .article-footer {
+  		margin: 0 auto 0 auto;
+		width: 800px;
+	}
 }
