@@ -1,0 +1,268 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:700,400");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: 0; }
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/*Importing google fonts*/
+/*Setting up basic font*/
+body {
+  font-family: "Georgia", serif;
+  font-size: 16px;
+  font-size: 1em; }
+
+h1, h2, h3, h4 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700; }
+
+h1 {
+  font-size: 32px;
+  font-size: 2em; }
+
+h2 {
+  font-size: 26px;
+  font-size: 1.625em;
+  margin: 35px 0 10px 0; }
+
+h3 {
+  font-size: 22px;
+  font-size: 1.375em;
+  margin: 25px 0 10px 0; }
+
+h4 {
+  font-size: 18px;
+  font-size: 1.125em;
+  margin: 15px 0 10px 0; }
+
+p {
+  line-height: 24px;
+  line-height: 1.5em;
+  margin: 5px 0 5px 0; }
+
+ul li {
+  line-height: 20px;
+  line-height: 1.25em;
+  margin: 10px 0 5px 20px; }
+
+body {
+  color: #505050; }
+
+a {
+  border-bottom: 4px solid #D53939;
+  color: #505050;
+  text-decoration: none;
+  transition: color 0.5s ease, border 0.5s ease; }
+  a:hover {
+    color: #D53939; }
+
+/*BASIC ARTICLE STYLING*/
+img {
+  border: 1px solid #f2f2f2;
+  height: auto;
+  max-height: 100%;
+  max-width: 100%;
+  width: 100%; }
+
+.article-header {
+  background-image: url("../images/article-cover.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  box-shadow: 0 5px 5px #d3d3d3;
+  height: 150px;
+  padding: 60px 10px 20px 10px;
+  position: relative;
+  width: 100%; }
+  .article-header h1 {
+    color: #ffffff; }
+
+.article-info {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  bottom: -15px;
+  color: #ffffff;
+  font-family: "Roboto", sans-serif;
+  font-size: 12px;
+  font-size: 0.75em; }
+
+.by-author {
+  padding: 0 5px 0 5px; }
+
+.article-body {
+  padding: 20px 10px 20px 10px; }
+  .article-body img {
+    margin: 15px 0 15px 0; }
+
+.autor-avatar {
+  border-radius: 50%; }
+
+.small-avatar {
+  height: 60px;
+  width: 60px; }
+
+.intro {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  margin: 20px 0 0 0; }
+
+.primary-button {
+  border-radius: 10px;
+  background-color: #D53939;
+  border: 1px solid #ffffff;
+  color: #ffffff;
+  display: block;
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  font-size: 0.875em;
+  font-weight: bold;
+  margin: 20px auto 20px auto;
+  padding: 15px 15px 15px 15px;
+  text-align: center;
+  transition: background-color 0.5s ease, border 0.5s ease; }
+  .primary-button:after {
+    content: " >"; }
+  .primary-button:hover {
+    background-color: #ffffff;
+    border: 1px solid #D53939;
+    color: #D53939; }
+
+.author-container {
+  background: #f2f2f2;
+  padding: 10px 10px 20px 10px; }
+
+.author-block {
+  text-align: center; }
+
+.big-avatar {
+  height: 90px;
+  margin: 15px 0 0 0;
+  width: 90px; }
+
+.author-info p {
+  font-size: 12px;
+  font-size: 0.75em; }
+
+.topic-container {
+  padding: 10px 10px 20px 10px; }
+
+.topics-list {
+  list-style: none; }
+  .topics-list li {
+    background-color: #d3d3d3;
+    border-radius: 5px;
+    display: inline-block;
+    font-family: "Roboto", sans-serif;
+    font-size: 12px;
+    font-size: 0.75em;
+    font-weight: bold;
+    margin: 5px 2px 5px 2px;
+    padding: 5px 10px 5px 10px; }
+  .topics-list .web-design {
+    background-color: #F6378F; }
+  .topics-list .trends {
+    background-color: #FFDD00; }
+  .topics-list .web {
+    background-color: #F5EFE8; }
+  .topics-list .inspiration {
+    background-color: #8EA5EB; }
+
+/*MEDIA QUERIES*/
+@media (min-width: 480px) {
+  .article-header {
+    height: 200px;
+    text-align: center; }
+
+  .primary-button {
+    max-width: 270px; }
+
+  .article-body {
+    padding: 30px 20px 30px 20px; }
+
+  .article-footer {
+    padding: 0 20px 30px 20px; } }
+@media (min-width: 768px) {
+  .article-header {
+    height: 300px;
+    padding: 80px 30px 30px 30px; }
+
+  .article-info {
+    flex-direction: column;
+    margin: 40px 0 0 0;
+    position: static; }
+
+  .by-author {
+    padding: 10px 0 5px 0; }
+
+  .article-body {
+    padding: 30px 30px 30px 30px; }
+
+  .article-footer {
+    padding: 0 30px 30px 30px; }
+
+  .author-container {
+    padding: 20px 30px 40px 30px; }
+
+  .author-block {
+    margin: 30px 0 0 0;
+    text-align: left; }
+    .author-block img {
+      display: inline-block;
+      margin: 0 15px 0 0;
+      vertical-align: top; }
+
+  .author-info {
+    display: inline-block;
+    vertical-align: top;
+    width: 80%; }
+
+  .topic-container h3, .topic-container ul {
+    display: inline-block;
+    vertical-align: text-bottom; }
+  .topic-container li:first-child {
+    margin-left: 10px; } }
+@media (min-width: 800px) {
+  .article-body, .article-footer {
+    margin: 0 auto 0 auto;
+    width: 800px; } }
+
+/*# sourceMappingURL=article.css.map */
