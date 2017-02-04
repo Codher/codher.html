@@ -71,10 +71,10 @@ img {
 	font-size: 12px;
 	font-size: 0.75em;
 }
+
 .by-author {
 	padding: 0 5px 0 5px;
 }
-
 
 //article body
 .article-body {
@@ -88,6 +88,7 @@ img {
 .autor-avatar {
 	border-radius: 50%;
 }
+
 .small-avatar {
 	height: 60px;
 	width: 60px;
@@ -115,7 +116,7 @@ img {
 	text-align: center;
 	transition: background-color 0.5s ease,
 				border 0.5s ease;
-
+				
 	&:after {
 		content: " >";
 	}

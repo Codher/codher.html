@@ -9,16 +9,22 @@ We'll introduce core concepts together with modern development tools.
 ## Setup
 Before we start writing code we'll need to setup some development tools. Follow these instructions to configure your environment.
 
-1. Install [Git](https://git-scm.com/) or [Github Desktop](https://desktop.github.com)
-- Install [Atom](https://www.atom.io) or any other code editor
-- Login or create an account.
+1. Install [Github Desktop](https://desktop.github.com)
+  - Login or create an account.
 - Install [Node](https://nodejs.org/en/)
-- Install Yarn
-  - From a terminal run `npm install -g yarn gulp-cli`
-- Clone the respository
+- Install [Atom](https://www.atom.io) or any other code editor
+- Clone the repository (Green button on the top of this page)
+  - Please keep in mind where do you choose to save the project
 - Navigate to the folder
+- Install Yarn and gulp-cli
+  - From a terminal run `npm install yarn gulp-cli`
 - Setup the project
   - `yarn install`
 - (Optional) If you are using Chrome, install the [livereload extension](https://chrome.google.com/webstore/detail/livereload/jnihajbhpnppcggbcgedagnkighmdlei?hl=en)
-8. Run the server
+- Run the server
   - `gulp`
+  - Don't close this window, and keep an eye on it - it can let you know if you've made any mistakes
+
+## Resources
+[MDN CSS Reference](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference)
+[MDN HTML Element Reference](https://developer.mozilla.org/en/docs/Web/HTML/Element)
