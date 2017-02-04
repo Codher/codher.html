@@ -1,0 +1,134 @@
+// @import lets you include the content of other stylesheets into the current one
+// This is very useful because you can reuse your code and only write it once, and
+// only maintain it in one place.
+@import "reset";
+// "reset" is a stylesheet that helps us make our website look the same in
+// most browsers, by removing their own default configuration.
+
+// We can also create aliases for values that can be reused throughout the file
+// we call them variables, and in scss they begin with a dolar sign.
+// Try changing it to your favourite color
+$color-brand: #0e3f66;
+
+header {
+  .hero {
+    // We can also target other assets and use them from css for example, let's
+    // set an image as the background of our blog's header
+    background-image: url('../images/plants.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100px;
+
+    h1 {
+      padding: 24px;
+      color: $color-brand;
+      font-size: 42px;
+      font-weight: bold;
+    }
+
+    // Media queries are an essential part of modern front end development
+    // they allow us to add different rules to selectors based on the size of the
+    // device the user is visitng our site through.
+    @media(min-width: 320px ) {
+      height: 150px;
+    }
+
+    @media(min-width: 720px ) {
+      height: 300px;
+    }
+
+    @media(min-width: 1140px) {
+      height: 400px;
+    }
+  }
+}
+
+main {
+  .post {
+    padding: 48px;
+
+    .article-title {
+      font-size: 50px;
+      border-bottom: 1px solid $color-brand;
+      color: $color-brand;
+      padding-bottom: 6px;
+      margin-bottom: 24px;
+    }
+
+    p {
+      font-size: 16px;
+      margin-bottom: 12px;
+      font-family: sans-serif;
+      line-height: 24px;
+
+    }
+
+    figure {
+      // float is a property that lets you lay out the content on your site
+      float: left;
+      margin-right: 12px;
+
+      figcaption {
+        font-size: 14px;
+        font-family: monospace;
+        text-align: center;
+      }
+    }
+
+    .lead {
+      font-size: 18px;
+      font-weight: bold;
+      width: 75%;
+    }
+  }
+
+  .comments {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    h3 {
+      color: $color-brand;
+      text-align: left;
+      font-size: 20px;
+    }
+
+    ul {
+      list-style-type: none;
+      width: 500px;
+
+      .comment {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin-bottom: 24px;
+
+        img {
+          height: 50px;
+          width: 50px;
+          border-radius: 50%;
+          margin-right: 12px;
+        }
+
+        .comment-content {
+          display: flex;
+          flex-direction: column;
+          font-size: 18px;
+
+          .comment-date {
+            font-size: 12px;
+            color: #555;
+          }
+        }
+      }
+    }
+  }
+}
+
+footer {
+  font-size: 12px;
+  padding: 24px 0;
+  text-align: center;
+}

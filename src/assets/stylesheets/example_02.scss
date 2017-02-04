@@ -1,0 +1,91 @@
+// Welcome to your first SCSS file!
+// That's two languages in one day, phew! This is going fast isn't it?
+// Anyway, notice how comments in SCSS start with two slashes (//)
+// Something else you probably noticed is that we linked a .css file and this
+// is an .scss file, it is because browsers only understand css, but scss is
+// easier to read and write for humans. We'll learn more about it later.
+
+// (S)CSS works by setting the values of properties to the selectors we have in
+// our HTML.
+// Whoa, those were a bunch of new words, let's take them one at a time.
+// A selector is a way to refer (select) to an element or elements in our HTML.
+// You can use tag names, like body and everything between the curly braces {}
+// will be rules that apply to that element
+body {
+  // Properties are a list of keywords to which you can assign specific values.
+  // For example: we can set the background to a very annoying color
+  background: hotpink;
+  // or set the padding to a few pixels
+  padding: 12px;
+  // and MANY other things, you can find a list of them here
+  // https://developer.mozilla.org/en-US/docs/Web/CSS/Reference
+  // ok that hotpink is horrible let's get rid of it, uncomment the next line to
+  // do it.
+  background: #fcfcfc;
+  // We can also set colors with hexadecimal values (and a few other ways)
+}
+
+// Let's change how the headers in the page look.
+h1 {
+  color: #333333;
+  font-size: 48px;
+  text-decoration: underline;
+  font-family: sans-serif;
+}
+
+h2 {
+  // we could make our h2 bigger than our h1 but we probably shouldn't
+  font-size: 52px;
+}
+
+h3 {
+  text-transform: uppercase;
+}
+
+h4 {
+  font-size: 24px;
+  font-style: italic;
+  text-align: center;
+}
+
+// You can also apply rules to more than one selector, just divide them with a comma
+h5, h6 {
+  font-size: 20px;
+  color: #116177;
+  text-align: right;
+  margin: 0;
+}
+
+// Now we're about to start learning about a very interesting part of CSS - the
+// meaning of the C in the name: "Cascading"
+li {
+  color: red;
+}
+
+// Starting a selector with a dot . means that it will look for whatever text that
+// follows in the class attribute of your html elements
+.align-center {
+  text-align: center;
+}
+
+.huge {
+  font-size: 40px;
+}
+
+// One of the cool things about SCSS is that you can nest selectors in the same
+// way as in your html. It makes it much easier to know what elements are being
+// targeted by your rules.
+ol {
+  background: #333333;
+
+  // For example, these rules will only affect the lis that are "children"
+  // of an ol
+  li {
+    text-align: right;
+    color: white;
+    // You might have noticed that the lis that have the class "align-center"
+    // remained centered even though we added the text-align: right; rule
+    // afterwards. That's because classes are more important than just element
+    // types.
+  }
+}
